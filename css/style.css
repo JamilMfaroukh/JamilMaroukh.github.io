@@ -1,0 +1,125 @@
+:root {
+    --bg-color: #1a1e23; /* Couleur de fond sombre */
+    --cyan-color: #00d2ff;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color:#022b3b;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    overflow-x: hidden;
+    background-image: url('img/fond2.jpg');
+}
+
+.text-cyan {
+    color: var(--cyan-color) !important;
+}
+
+/* Navbar */
+.nav-link {
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--cyan-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 85vh;
+}
+
+/* Icônes Sociales */
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--cyan-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cyan-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: var(--cyan-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px var(--cyan-color);
+}
+
+/* Forme bleue derrière l'image (Le Blob) */
+.blob-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: var(--cyan-color);
+    
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; /* Forme irrégulière */
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.profile-img {
+    max-width: 400px;
+    position: relative;
+    z-index: 2;
+}
+
+/* style pour le footer*/
+
+html {
+    scroll-behavior: smooth; /* Animation fluide lors du clic sur les liens */
+}
+
+/* Petit effet au survol des liens du footer */
+.hover-cyan:hover {
+    color: var(--cyan-color) !important;
+    transition: 0.3s;
+}
+
+#my-footer {
+    background-color: rgba(0, 0, 0, 0.2); /* Un fond légèrement plus sombre que le body */
+}
+ #fonction{
+    background-color: #00d2ff;
+ }
+ /* Maintenant le css pour les barres de progression*/
+
+
+/* Animation des barres */
+.progress-bar-fill {
+    transition: width 2s ease-in-out; /* Durée de l'animation : 2 secondes */
+}
+
+/* Effet brillant sur les icônes sociales */
+.social-icons a {
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--cyan-color);
+    border-color: var(--cyan-color);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.6); /* Lueur cyan */
+    transform: translateY(-5px); /* Petit saut vers le haut */
+}
+.skill-icon{
+    width: 28px;
+    height: 24px;
+    object-fit: contain;
+}
+.bg-bootstrap{
+    background-color: #7952B3;
+}
+.bg-html{
+    background-color: #f47506;
+}
+.bg-java{
+    background-color: #f47506;
+}
